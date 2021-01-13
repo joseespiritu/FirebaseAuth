@@ -1,4 +1,4 @@
-<html lang="en">
+et<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -120,6 +120,32 @@
       </li>
     </ul>
   </div>
+
+t
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-firestore.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCDkf08Hfybdx3nDG6_HhWVqn9D2Cl5uQs",
+      authDomain: "game-guidez-eab51.firebaseapp.com",
+      projectId: "game-guidez-eab51",
+      storageBucket: "game-guidez-eab51.appspot.com",
+      messagingSenderId: "572407426049",
+      appId: "1:572407426049:web:2134290a27fd80d484a400"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    // Make auth and firestore references
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+
+    // update firestore settings
+    db.setings({timestampsInSnapshots: true})
+  </script>
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
